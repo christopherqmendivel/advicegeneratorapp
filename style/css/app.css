@@ -1,0 +1,81 @@
+@charset "UTF-8";
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  background: #1f2632;
+  font-family: "Manrope", sans-serif;
+}
+
+.container {
+  height: 85vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.card {
+  background-color: #323a49;
+  border-radius: 1.5rem;
+  padding: 1.5rem;
+  margin: 0 1rem;
+  position: relative;
+  padding-bottom: 7rem;
+}
+@media (min-width: 768px) {
+  .card {
+    max-width: 50rem;
+  }
+}
+
+.card-body {
+  text-align: center;
+}
+.card-body .card-title-id {
+  color: #52ffa8;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+}
+.card-body .card-text {
+  color: #cee3e9;
+  font-size: 2.8rem;
+  quotes: "“" "”";
+}
+.card-body .card-text:before {
+  content: open-quote;
+}
+.card-body .card-text:after {
+  content: close-quote;
+}
+
+.card-footer {
+  display: flex;
+  justify-content: center;
+}
+.card-footer .cube {
+  display: inline-block;
+  padding: 2rem;
+  border-radius: 50%;
+  background-color: #52ffa8;
+  position: absolute;
+  bottom: -4rem;
+}
+.card-footer .cube:hover {
+  box-shadow: 0 0 1rem #52ffa8, 0 0 4rem #52ffa8, 0 0 3rem #52ffa8;
+}
+.card-footer img {
+  width: 3.5rem;
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=app.css.map */
